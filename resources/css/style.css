@@ -32,10 +32,12 @@
         text-decoration: none;
         color: white;
     }
+    /* Full-Width Site Container */
 
     #sitecontainer {
         margin: 0 auto;
     }
+    /* Header Bar */
 
     header {
         display: flex;
@@ -59,6 +61,7 @@
         height: 1.5rem;
         margin: 0 0 0 .5rem;
     }
+    /* Hero Graphic */
 
     #herographic {
         background: transparent url("../images/moto.jpeg") center;
@@ -66,7 +69,6 @@
         height: 25rem;
         width: auto;
         display: flex;
-        align-items: center;
         justify-content: center;
     }
 
@@ -85,6 +87,7 @@
     .blackbox h2 {
         margin: 0 0 .25rem 0;
     }
+    /* Navigation Menu */
 
     .navflex {
         background: firebrick;
@@ -99,11 +102,17 @@
         align-items: center;
         justify-content: space-between
     }
+    /* Gadgets & Info Full-Width Container */
 
     .fullsizecontainer {
         background-color: white;
         display: flex;
         flex-direction: column;
+    }
+    /* Gadgets */
+
+    .container1 {
+        display: block;
     }
 
     .gadgetflex {
@@ -144,6 +153,7 @@
         white-space: nowrap;
         padding: .5rem 0;
     }
+    /* Information */
 
     .container2 {
         display: block;
@@ -173,6 +183,7 @@
         background-color: white;
         color: black;
     }
+    /* Footer */
 
     footer {
         margin: 0 auto;
