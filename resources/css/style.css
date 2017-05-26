@@ -114,6 +114,17 @@ header img {
     justify-content: space-between
 }
 
+.redmenu {
+    padding: .75rem 0;
+    margin: 0 auto;
+    /*960px*/
+    width: 53.3rem;
+    background-color: firebrick;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Gadgets & Info Full-Width Container */
 
@@ -207,4 +218,19 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1024px) {
+    .redbar {
+        display: none;
+    }
+    .redmenu {
+        display: flex;
+    }
+    .gadgetcell:last-child {
+        display: none;
+    }
+    .gadgetcell {
+        width: 47%;
+    }
 }
