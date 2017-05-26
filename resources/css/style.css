@@ -1,195 +1,210 @@
-    html {
-        font-size: 18px;
-    }
+html {
+    font-size: 18px;
+}
 
-    body {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 1rem;
-        line-height: 1.65rem;
-        color: white;
-        background-color: black;
-        margin: 0;
-        padding: 0;
-    }
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.65rem;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
 
-    h1 {
-        font-size: 2rem;
-        line-height: 2.5rem;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-    }
+h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
 
-    h2 {
-        font-size: 1rem;
-        line-height: 1.25rem;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-    }
+h2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    /* Full-Width Site Container */
+a {
+    text-decoration: none;
+    color: white;
+}
 
-    #sitecontainer {
-        margin: 0 auto;
-    }
-    /* Header Bar */
 
-    header {
-        display: flex;
-        align-items: center;
-        width: 53.3rem;
-        margin: 0 auto;
-        background-color: black;
-    }
+/* Full-Width Site Container */
 
-    .headerflexbox {
-        display: flex;
-        align-items: center;
-    }
+#sitecontainer {
+    margin: 0 auto;
+}
 
-    header p {
-        padding: .66rem 1rem;
-    }
 
-    header img {
-        align-self: center;
-        height: 1.5rem;
-        margin: 0 0 0 .5rem;
-    }
-    /* Hero Graphic */
+/* Header Bar */
 
-    #herographic {
-        background: transparent url("../images/moto.jpeg") center;
-        background-size: cover;
-        height: 25rem;
-        width: auto;
-        display: flex;
-        justify-content: center;
-    }
+header {
+    display: flex;
+    align-items: center;
+    /*960px*/
+    width: 53.3rem;
+    margin: 0 auto;
+    background-color: black;
+}
 
-    .heroflex {
-        width: 53.3rem;
-        margin: 9rem 0 0 0;
-    }
+.headerflexbox {
+    display: flex;
+    align-items: center;
+}
 
-    .blackbox {
-        padding: 2rem 3rem;
-        width: 20rem;
-        text-align: left;
-        background-color: black;
-    }
+header p {
+    padding: .66rem 1rem;
+}
 
-    .blackbox h2 {
-        margin: 0 0 .25rem 0;
-    }
-    /* Navigation Menu */
+header img {
+    align-self: center;
+    height: 1.5rem;
+    margin: 0 0 0 .5rem;
+}
 
-    .navflex {
-        background: firebrick;
-    }
 
-    .redbar {
-        padding: .75rem 0;
-        margin: 0 auto;
-        width: 53.3rem;
-        background-color: firebrick;
-        display: flex;
-        align-items: center;
-        justify-content: space-between
-    }
-    /* Gadgets & Info Full-Width Container */
+/* Hero Graphic */
 
-    .fullsizecontainer {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-    }
-    /* Gadgets */
+#herographic {
+    background: transparent url("../images/moto.jpeg") center;
+    background-size: cover;
+    height: 25rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
 
-    .container1 {
-        display: block;
-    }
+.heroflex {
+    /*960px*/
+    width: 53.3rem;
+    margin: 9rem 0 0 0;
+}
 
-    .gadgetflex {
-        width: 53.3rem;
-        margin: 0 auto;
-        padding: 3rem 0 0 0;
-        display: flex;
-        justify-content: space-between;
-    }
+.blackbox {
+    padding: 2rem 3rem;
+    width: 20rem;
+    text-align: left;
+    background-color: black;
+}
 
-    .gadgetbox {
-        width: 30%;
-        height: auto;
-        border: 4px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.blackbox h2 {
+    margin: 0 0 .25rem 0;
+}
 
-    .gadgetbox img {
-        display: block;
-        height: 9rem;
-        width: auto;
-        padding: 2rem;
-    }
 
-    .gadgetbox:nth-child(3) img {
-        width: auto;
-        height: 7rem;
-        padding: 3rem;
-        display: block;
-    }
+/* Navigation Menu */
 
-    .description {
-        display: block;
-        background-color: black;
-        text-align: center;
-        white-space: nowrap;
-        padding: .5rem 0;
-    }
-    /* Information */
+.navflex {
+    background: firebrick;
+}
 
-    .container2 {
-        display: block;
-    }
+.redbar {
+    padding: .75rem 0;
+    margin: 0 auto;
+    /*960px*/
+    width: 53.3rem;
+    background-color: firebrick;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
 
-    .infoflex {
-        margin: 3rem auto 4rem auto;
-        width: 53.3rem;
-        display: flex;
-        justify-content: space-between;
-    }
 
-    .infobox {
-        background-color: black;
-        text-align: left;
-        width: 35%;
-        padding: 1rem 0 0 0;
-    }
+/* Gadgets & Info Full-Width Container */
 
-    .infobox span {
-        margin: 0 0 0 2rem;
-    }
+.fullsizecontainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
 
-    .infobox p {
-        padding: 0;
-        margin: 1rem 0 0 0;
-        background-color: white;
-        color: black;
-    }
-    /* Footer */
 
-    footer {
-        margin: 0 auto;
-        width: 53.3rem;
-        height: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
+/* Gadgets */
+
+.gadgetcontainer {
+    display: block;
+}
+
+.gadgetrow {
+    /*960px*/
+    width: 53.3rem;
+    margin: 0 auto;
+    padding: 3rem 0 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.gadgetcell {
+    width: 30%;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gadgetcell img {
+    max-width: 100%;
+    height: 9rem;
+    display: block;
+    padding: 2rem;
+    object-fit: contain;
+}
+
+.gadgetcell p {
+    background-color: black;
+    text-align: center;
+    white-space: nowrap;
+    padding: .5rem 0;
+}
+
+
+/* Information */
+
+.container2 {
+    display: block;
+}
+
+.infoflex {
+    margin: 3rem auto 4rem auto;
+    /*960px*/
+    width: 53.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infobox {
+    background-color: black;
+    text-align: left;
+    width: 35%;
+    padding: 1rem 0 0 0;
+}
+
+.infobox span {
+    margin: 0 0 0 2rem;
+}
+
+.infobox p {
+    padding: 0;
+    margin: 1rem 0 0 0;
+    background-color: white;
+    color: black;
+}
+
+
+/* Footer */
+
+footer {
+    margin: 0 auto;
+    /*960px*/
+    width: 53.3rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
