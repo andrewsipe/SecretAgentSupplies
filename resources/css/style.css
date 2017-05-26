@@ -118,7 +118,7 @@ header img {
     padding: .75rem 0;
     margin: 0 auto;
     /*960px*/
-    width: 53.3rem;
+    width: 100%;
     background-color: firebrick;
     display: none;
     align-items: center;
@@ -136,10 +136,6 @@ header img {
 
 
 /* Gadgets */
-
-.gadgetcontainer {
-    display: block;
-}
 
 .gadgetrow {
     /*960px*/
@@ -176,10 +172,6 @@ header img {
 
 
 /* Information */
-
-.container2 {
-    display: block;
-}
 
 .infoflex {
     margin: 3rem auto 4rem auto;
@@ -221,6 +213,13 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+    header,
+    footer,
+    .heroflex,
+    .gadgetrow,
+    .infoflex {
+        width: 100%;
+    }
     .redbar {
         display: none;
     }
@@ -232,5 +231,63 @@ footer {
     }
     .gadgetcell {
         width: 47%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    header,
+    footer,
+    .heroflex,
+    .gadgetrow,
+    .infoflex {
+        width: 100%;
+    }
+    #herographic {
+        height: 15.75rem;
+    }
+    .heroflex {
+        margin: 10rem 0 0 0;
+    }
+    .blackbox {
+        padding: 1rem 2rem;
+        width: 100%;
+        text-align: left;
+    }
+    .blackbox h2 {
+        font-size: .77rem;
+    }
+    .blackbox h1 {
+        font-size: 1rem;
+    }
+    .redbar {
+        display: none;
+    }
+    .redmenu {
+        width: 100%;
+        display: flex;
+    }
+    .gadgetrow {
+        justify-content: center;
+    }
+    .gadgetcell {
+        display: none;
+    }
+    .gadgetcell:first-child {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    .infoflex {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .infobox {
+        width: 90%;
+        margin: .5rem 0 0 0;
+    }
+    footer {
+        justify-content: center;
     }
 }
