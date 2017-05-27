@@ -1,291 +1,307 @@
+/* Rem basis ================================================================ */
+
 html {
     font-size: 18px;
 }
 
+
+/* Standard element styling ================================================= */
+
 body {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    background-color: black;
+
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.65rem;
-    color: white;
-    background-color: black;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: bold;
     margin: 0;
     padding: 0;
+
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
 }
 
 h2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    font-weight: bold;
     margin: 0;
     padding: 0;
+
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.25rem;
 }
 
 a {
     text-decoration: none;
+
     color: white;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-/* Full-Width Site Container */
+
+/* Full-width site container ================================================ */
 
 #sitecontainer {
     margin: 0 auto;
 }
 
 
-/* Header Bar */
+/* Header bar ================================================================*/
+
+.fixwidthcontainer {
+    /* 1rem = 18px | 53.3rem = 959.4px */
+    width: 53.3rem;
+    margin: 0 auto;
+}
 
 header {
     display: flex;
-    align-items: center;
-    /*960px*/
-    width: 53.3rem;
-    margin: 0 auto;
-    background-color: black;
-}
 
-.headerflexbox {
-    display: flex;
     align-items: center;
 }
 
 header p {
-    padding: .66rem 1rem;
+    padding: 0.66rem 1rem;
 }
 
 header img {
-    align-self: center;
     height: 1.5rem;
-    margin: 0 0 0 .5rem;
+    margin: 0 0 0 0.5rem;
+
+    align-self: center;
 }
 
 
-/* Hero Graphic */
+/* Hero graphic ==============================================================*/
 
 #herographic {
-    background: transparent url("../images/moto.jpeg") center;
-    background-size: cover;
-    height: 25rem;
-    width: auto;
     display: flex;
+
+    width: auto;
+    height: 25rem;
+
+    background: transparent url('../images/moto.jpeg') center;
+    background-size: cover;
+
     justify-content: center;
 }
 
-.heroflex {
-    /*960px*/
-    width: 53.3rem;
-    margin: 9rem 0 0 0;
-}
-
 .blackbox {
-    padding: 2rem 3rem;
     width: 20rem;
+    margin: 9rem 0 0;
+    padding: 2rem 3rem;
+
     text-align: left;
+
     background-color: black;
 }
 
 .blackbox h2 {
-    margin: 0 0 .25rem 0;
+    margin: 0 0 0.25rem;
 }
 
 
-/* Navigation Menu */
+/* Navigation menu ===========================================================*/
 
-.navflex {
+.navbg {
     background: firebrick;
 }
 
-.redbar {
-    padding: .75rem 0;
-    margin: 0 auto;
-    /*960px*/
-    width: 53.3rem;
-    background-color: firebrick;
+nav {
     display: flex;
+
+    padding: 0.75rem 0;
+
+    background-color: firebrick;
+
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
-.redmenu {
-    padding: .75rem 0;
-    margin: 0 auto;
-    /*960px*/
-    width: 100%;
-    background-color: firebrick;
+.mediamenu {
     display: none;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.75rem 0;
+
+    background-color: firebrick;
+
     align-items: center;
     justify-content: center;
 }
 
 
-/* Gadgets & Info Full-Width Container */
+/* White background - full-width container ===================================*/
 
-.fullsizecontainer {
-    background-color: white;
+.maincontentcontainer {
     display: flex;
     flex-direction: column;
+
+    background-color: white;
 }
 
 
-/* Gadgets */
+/* Gadgets ===================================================================*/
 
-.gadgetrow {
-    /*960px*/
-    width: 53.3rem;
-    margin: 0 auto;
-    padding: 3rem 0 0 0;
+.gadgetflex {
     display: flex;
+
+    padding: 3rem 0 0;
+
     align-items: flex-end;
     justify-content: space-between;
 }
 
-.gadgetcell {
-    width: 30%;
-    border: 4px solid black;
+.gadget {
     display: flex;
     flex-direction: column;
+
+    width: 30%;
+
+    border: 4px solid black;
+
     justify-content: center;
 }
 
-.gadgetcell img {
+.gadget img {
+    display: block;
+
     max-width: 100%;
     height: 9rem;
-    display: block;
     padding: 2rem;
+
     object-fit: contain;
 }
 
-.gadgetcell p {
-    background-color: black;
+.gadget p {
+    padding: 0.5rem 0;
+
     text-align: center;
     white-space: nowrap;
-    padding: .5rem 0;
+
+    background-color: black;
 }
 
 
-/* Information */
+/* Information ===============================================================*/
 
 .infoflex {
-    margin: 3rem auto 4rem auto;
-    /*960px*/
-    width: 53.3rem;
     display: flex;
+
+    margin: 3rem auto 4rem;
+
     justify-content: space-between;
 }
 
-.infobox {
-    background-color: black;
-    text-align: left;
+.info {
     width: 35%;
-    padding: 1rem 0 0 0;
+    padding: 1rem 0 0;
+
+    text-align: left;
+
+    background-color: black;
 }
 
-.infobox span {
+.info span {
     margin: 0 0 0 2rem;
 }
 
-.infobox p {
+.info p {
+    margin: 1rem 0 0;
     padding: 0;
-    margin: 1rem 0 0 0;
-    background-color: white;
+
     color: black;
+    background-color: white;
 }
 
 
-/* Footer */
+/* Footer ====================================================================*/
 
 footer {
-    margin: 0 auto;
-    /*960px*/
-    width: 53.3rem;
-    height: 5rem;
     display: flex;
+
+    height: 5rem;
+    margin: 0 0 0 0.5rem;
+
     align-items: center;
     justify-content: flex-start;
 }
 
+
+/* @media 1024 pixels and lower ==============================================*/
+
 @media only screen and (max-width: 1024px) {
-    header,
-    footer,
-    .heroflex,
-    .gadgetrow,
-    .infoflex {
+    .fixwidthcontainer {
         width: 100%;
     }
-    .redbar {
+    nav {
         display: none;
     }
-    .redmenu {
+    .mediamenu {
         display: flex;
     }
-    .gadgetcell:last-child {
+    .gadget:last-child {
         display: none;
     }
-    .gadgetcell {
+    .gadget {
         width: 47%;
     }
 }
 
+
+/* @media 470 pixels and lower ===============================================*/
+
 @media only screen and (max-width: 470px) {
-    header,
-    footer,
-    .heroflex,
-    .gadgetrow,
-    .infoflex {
-        width: 100%;
-    }
     #herographic {
-        height: 15.75rem;
-    }
-    .heroflex {
-        margin: 10rem 0 0 0;
+        height: 16rem;
     }
     .blackbox {
-        padding: 1rem 2rem;
         width: 100%;
+        margin: 10rem 0 0;
+        padding: 1rem 2rem;
+
         text-align: left;
     }
     .blackbox h2 {
-        font-size: .77rem;
+        font-size: 0.77rem;
     }
     .blackbox h1 {
         font-size: 1rem;
     }
-    .redbar {
-        display: none;
-    }
-    .redmenu {
-        width: 100%;
-        display: flex;
-    }
-    .gadgetrow {
+    .gadgetflex {
         justify-content: center;
     }
-    .gadgetcell {
+    .gadget {
         display: none;
     }
-    .gadgetcell:first-child {
+    .gadget:first-child {
         display: flex;
-        justify-content: center;
+
         width: 90%;
+
+        justify-content: center;
     }
     .infoflex {
         flex-direction: column;
+
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    .infobox {
+    .info {
         width: 90%;
-        margin: .5rem 0 0 0;
+        margin: 0.5rem 0 0;
     }
     footer {
         justify-content: center;
